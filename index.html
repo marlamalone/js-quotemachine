@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quotes from Medium Articles</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="quote-box">
+        <div class="quote-text">
+          <i class="fa fa-quote-left"> </i><span id="text"></span>
+        </div>
+        <div class="quote-info">
+          <div class="quote-title">
+            <span id="title" title="View this article on Medium"></span>
+          </div>
+          <div class="quote-author">
+            -
+            <span id="author"></span>
+          </div>
+        </div>
+        <div class="buttons">
+          <i
+            class="fa-brands fa-twitter button"
+            id="tweet-quote"
+            title="Tweet this quote!"
+            target="_top"
+          ></i>
+          <button class="button" id="new-quote" role="button">New quote</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b3accc78e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
