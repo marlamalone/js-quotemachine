@@ -1,12 +1,13 @@
 import './style.css';
 import React from 'react';
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>;
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>;
 
 $(document).ready(function () {
   getQuotes().then(() => {
     getQuote();
   });
-  $('#new-quote').click(getQuote);
+  $('#new-quote').click(getQuote());
 });
 
 let quotesData = [];

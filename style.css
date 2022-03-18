@@ -112,6 +112,7 @@ body {
 }
 
 footer {
+  margin-top: 5px;
   color: #222;
   display: flex;
   justify-content: center;
@@ -119,4 +120,5 @@ footer {
 .fa-copyright {
   display: flex;
   align-items: center;
+  padding-right: 3px;
 }
