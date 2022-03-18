@@ -30,7 +30,7 @@ body {
   width: 450px;
   padding: 40px 50px;
   display: table;
-  background-color: #fff;
+  background-color: #222;
 }
 
 .fa-quote-left {
@@ -53,6 +53,7 @@ body {
 .quote-info {
   width: 450px;
   margin: 10px;
+  clear: both;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -67,7 +68,6 @@ body {
 .quote-author {
   width: 450px;
   height: auto;
-  clear: both;
   padding-top: 20px;
   font-size: 1em;
   text-align: right;
@@ -86,7 +86,7 @@ body {
   border-radius: 3px;
   outline: none;
   background-color: #333;
-  color: #fff;
+  color: #222;
   font-size: 0.85em;
   margin-top: 30px;
   opacity: 1;

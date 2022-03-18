@@ -46,7 +46,7 @@ function getRandomQuote() {
   ];
 }
 
-let currentQuote, currentAuthor, currentLink, currentTitle;
+let currentQuote, currentAuthor, currentLink, currentTitle, currentImgLink;
 
 function getQuote() {
   let randomQuote = getRandomQuote();
@@ -55,6 +55,7 @@ function getQuote() {
   currentAuthor = randomQuote.author_name;
   currentLink = randomQuote.link;
   currentTitle = randomQuote.title;
+  currentImgLink = randomQuote.post_image;
 
   $('.quote-text').animate({ opacity: 0 }, 500, function () {
     $(this).animate({ opacity: 1 }, 500);
@@ -67,7 +68,7 @@ function getQuote() {
   });
 
   function openLink() {
-    window.open($('#title').attr('href', currentLink), '_blank');
+    window.open(currentLink, '_blank');
   }
 
   $('.quote-title').animate({ opacity: 0 }, 500, function () {
@@ -83,14 +84,14 @@ function getQuote() {
   );
 
   var color = Math.floor(Math.random() * colors.length);
-  $('body').animate(
+  $('body').css(
     {
       backgroundColor: colors[color],
       color: colors[color],
     },
     1000
   );
-  $('.button').animate(
+  $('.button').css(
     {
       backgroundColor: colors[color],
     },
