@@ -2,7 +2,6 @@ import './style.css';
 import React from 'react';
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>;
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>;
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>;
 
 $(document).ready(function () {
   getQuotes().then(() => {
